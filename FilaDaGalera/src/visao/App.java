@@ -24,7 +24,7 @@ public class App {
         convencional.add(new Povo("Iarlysson", "888.888.888-88","Estudante", "ADS"));
 
         int contador=0;
-        while ((!prioridade.isEmpty()) && (!convencional.isEmpty())) {
+        while ((!prioridade.isEmpty()) || (!convencional.isEmpty())) {
             while ((contador < 3) && (!prioridade.isEmpty())) {
                 System.out.println("Prioridade atendida " + prioridade.poll() + "\n");
                 contador += 1;
